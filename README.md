@@ -87,9 +87,10 @@ Everything else should be blank
 
 SETTING UP SCRIPT PATHS FOR DATA RECORDING AND STORAGE
 
+Find the project folder where the assets folder for this project is located and create two folders: RecPos and RecAcc
 
-The Brooks file is specific to unity and it contains all of the graphics necessary for the game in the proper dimension and spacing.
+Open the RecPosition script in unity, double click - should open on monodevelope, and replace the path in each script, should be line 11 for each, with the path of the new folders accordingly.
 
-The Player 1.prefab file is also specific to unity and should be dragged into the scenes hierarchy. The prefab is default for the right joystick but if the user clicks the "Thumbstick" option under the Player 2 (script) drop down control will be given to the left joy stick.
+This tells the script where to store the .txt files of the astronuat position and acceleration.
 
 The controller for the game is a USB xbox 360 controller. Unity is a microsoft friendly software and it will easily recognize the controller upon being plugged into the computer. However, larger commercial joysticks can also be used in Unity it researchers are studying a population with reduced thumb dexterity. 
