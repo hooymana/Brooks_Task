@@ -11,7 +11,9 @@ Create Unity ID and sign in.
 
 Create new Project and open assets folder externally.
 
-Within Assets create an Artwork, Scripts, Prefab, and Scenes folder
+Within Assets create an Artwork, Scripts, Prefab, Sounds and Scenes folder
+
+In the Sounds folder place the pick up crystal and pick up artifact here.
 
 SETTING UP ARTWORK - SCREEN SHOULD BE IN GAME VIEW
 
