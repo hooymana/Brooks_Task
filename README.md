@@ -13,7 +13,11 @@ Create new Project and open assets folder externally.
 
 Within Assets create an Artwork, Scripts, Prefab, Sounds and Scenes folder
 
+SETTING UP SOUNDS.
+
 In the Sounds folder place the pick up crystal and pick up artifact here.
+
+Drag the pick up crystal sound to the coin collect sound box in the player 1 - player 2 script GUI in the hierarchy and the artifact pick up sound into the goal box of the player 1 - player 2 script GUI.
 
 SETTING UP ARTWORK - SCREEN SHOULD BE IN GAME VIEW
 
