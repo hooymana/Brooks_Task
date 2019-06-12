@@ -75,6 +75,8 @@ Seventh RecVel.cs
 
 Player2.cs, InputState.cs, RecPositions.cs and RecAcc.cs should be checked and the others should not be checked.
 
+It is important to restart your computer before attempting to play if you needed to install .NET Framework first. Otherwise, much of the Unity functions may not be implemented you will get errors.
+
 SETTING UP CONTROLLER INPUT IN UNITY
 
 In Unity go to Edit > Project Settings > Input. This opens the InputManager in the Inspector Window.
