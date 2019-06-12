@@ -11,6 +11,40 @@ Create Unity ID and sign in.
 
 Create new Project and open assets folder externally.
 
+Within Assets create an Artwork, Scripts, Prefab, and Scenes folder
+
+SETTING UP ARTWORK - SCREEN SHOULD BE IN GAME VIEW
+
+Download the player-sprites and block-sprites .png files and placde in the Artwork folder.
+
+In Unity click on each sprite image and in the inspector the following should be true for each image:
+
+texture type: sprite (2D and UI)
+Sprite Mode: Multiple
+Packing Tag:
+Pixels Per Unit: 100
+Generate Mip Maps: Check
+Filter Mode: Point
+Max Size: 2048
+Format: Truecolor
+
+APPLY
+
+For player sprite:
+Click on Sprite Editor. window should appear. On slice drop down select automatic, center and smart
+
+For block sprite:
+Click on Sprite Editor. Trim. X = 0, Y = 28, W = 100, H = 100, Pivot = Center. Apply.
+Drag block-sprite_0 into sprite renderer - sprite box for each block sprite in hierarchy.
+
+FULL GAME ENVIRONMENT SHOULD BE SET
+
+CREATE TAGS FOR GAME OBJECT
+
+Click on GameObject in Hierarachy. In inspector go to Tag and add Tags startBox and stopBox. GameObject should be tag as startBox and GameObjectExit should be tag as stopBox.
+
+ATTACHING SCRIPTS
+
 
 
 The Brooks file is specific to unity and it contains all of the graphics necessary for the game in the proper dimension and spacing.
