@@ -137,4 +137,8 @@ For changes in speed go into player2.cs and change private float speed = 7.5f to
 
 If you want to change the length of the trial you will need to change the float on line 29 in player2.cs from 4.6 to whatever you want. To collect more or less data then you must also change the floats on line 75 and 73 for the recpositions.cs and recacc.cs scripts respectively. It is important to change both of these to the same degree otherwise data collection will either be incomplete or not occur at all.
 
+PROCESSING DATA
+
+Script BrooksVar.m is a MATLAB script that will calculate scaling ratio, time in target, time outside startbox, time of last positive acceleration, time of first negative acceleration, number of successful trials and plots for average performance of both position and acceleration data.
+
 With any questions on set-up or troubleshooting please contact hooyman.andrew@gmail.com
