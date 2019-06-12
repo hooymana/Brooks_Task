@@ -43,8 +43,47 @@ CREATE TAGS FOR GAME OBJECT
 
 Click on GameObject in Hierarachy. In inspector go to Tag and add Tags startBox and stopBox. GameObject should be tag as startBox and GameObjectExit should be tag as stopBox.
 
-ATTACHING SCRIPTS
+ATTACHING SCRIPTS TO GAME SPRITES
 
+Download scripts from github. Easiest as a zip and place all scripts (.cs) into the Unity Scripts folder.
+
+Click on Main Camera and drag BlackCamera.cs to Script box
+
+Place the player1.prefab file into the Unity Prefab folder.
+Remove first script component in the player 1 prefab. This is the one between audio listener and animator.
+First attached script should be Player2.cs which follows the box collider 2d component
+Second attached script should be InputState.cs
+Third RecPositions.cs
+Fourth CursorPositions.cs
+Fifth CursorPositionsY.cs
+Sixth RecAcc.cs
+Seventh RecVel.cs
+
+Player2.cs, InputState.cs, RecPositions.cs and RecAcc.cs should be checked and the others should not be checked.
+
+SETTING UP CONTROLLER INPUT IN UNITY
+
+In Unity go to Edit > Project Settings > Input. This opens the InputManager in the Inspector Window.
+Drop down axes and add 4 new slots. E.g. if axes is 18 increase to 22.
+
+Label each new axes the following
+360_JoyL
+360_JoyR
+360_JoyRY
+360_JoyLY
+
+Each axis should have the following parameters:
+Positive Button = escape
+Gravity = 0
+Dead = 0.2
+Sensitivity = 1
+Type = Joystick Axis
+Axis = (360_JoyL = X axis; 360_JoyR = 4th axis (Joysticks); 360_JoyRY = 5th axis (Joysticks); 360_JoyLY = Get Motion from All Joysticks)
+Joy Num = (360_JoyL & 360_JoyLY = Get Motion from all Joysticks; 360_JoyR & 360_JoyRY = Joystick 1)
+
+Everything else should be blank
+
+SETTING UP SCRIPT PATHS FOR DATA RECORDING AND STORAGE
 
 
 The Brooks file is specific to unity and it contains all of the graphics necessary for the game in the proper dimension and spacing.
