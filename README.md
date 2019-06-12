@@ -1,7 +1,7 @@
 # Brooks_Task
 Unity Files required for reproduction of Brooks task
 
-Built on a PC using C#
+Built on a PC using C# in Unity version 5.0.1f (free version)
 
 The Brooks file is specific to unity and it contains all of the graphics necessary for the game in the proper dimension and spacing.
 
