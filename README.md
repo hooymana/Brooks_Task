@@ -13,12 +13,6 @@ Create new Project and open assets folder externally.
 
 Within Assets create an Artwork, Scripts, Prefab, Sounds and Scenes folder
 
-SETTING UP SOUNDS.
-
-In the Sounds folder place the pick up crystal and pick up artifact here.
-
-Drag the pick up crystal sound to the coin collect sound box in the player 1 - player 2 script GUI in the hierarchy and the artifact pick up sound into the goal box of the player 1 - player 2 script GUI.
-
 SETTING UP ARTWORK - SCREEN SHOULD BE IN GAME VIEW
 
 Download the player-sprites and block-sprites .png files and place in the Artwork folder.
@@ -36,12 +30,19 @@ Format: Truecolor
 
 click APPLY
 
+Only do this portion if above is not true. Otherwise move onto CREATE SORTING LAYERS FOR GAME
 For player sprite:
-Click on Sprite Editor. window should appear. On slice drop down select automatic, center and smart
+Click on player-sprites in artwork folder. In inspector click on Sprite Editor. window should appear. On slice drop down, located at the top, select automatic, center and smart.
 
 For block sprite:
-Click on Sprite Editor. Trim. X = 0, Y = 28, W = 100, H = 100, Pivot = Center. Apply.
-Drag block-sprite_0 into sprite renderer - sprite box for each block sprite in hierarchy.
+Click on block-sprites. Sprite Editor. Trim. X = 0, Y = 28, W = 100, H = 100, Pivot = Center. Apply.
+Drag block-sprite_0 into the scene.
+
+PLACING BOXES AND ASTRONAUT INTO THE SCENE
+
+First make sure you are in the scene tab. Then drag block-sprites 0 image from the artwork folder into the scene and repeat.The first block will have coordinates of 0,0,0. Setting coordinates is done in the inspector. First you have to click on the block in the scene for the inspector to populate. Then you will see in the inspector a transform box with x,y,z values for position. This is where you put in the coordinates 0,0,0. For the second block you will give it the coordinates of 16,0,0. Change the scale for each block to x = 2 and y = 2, also in the transform box. You won't have to do anything more for the boxes.
+
+Drag okayer-sprites 0 image into the scene and give it the coordinates 0,0,0. Astronaut should not be in the middle of the box on the left of the scene.
 
 CREATE SORTING LAYERS FOR GAME
 
@@ -52,6 +53,8 @@ Each block sprite should have a sorting layer or background and the player shoul
 FULL GAME ENVIRONMENT SHOULD BE SET - startbox and stopbox should be viewable in game view and scene view
 
 CREATE TAGS FOR GAME OBJECT
+
+Create two gameobjects by clicking on the gameobject dropdown and click on create empty. This will place a gameobject in the scene although it can't be seen. Click on the first gameobject and add a boxcollider (add componenet > physics 2d > box collider). Give this gameobject the following coords (0,0,0). Create another gameobject and call it gameobjectexit. give it coordintates (16,0,0). Also add a box collider to this one. The boxcollider for each gameobject should be size x = 2 and y = 1.
 
 Click on GameObject in Hierarachy. In inspector go to Tag and add Tags startBox and stopBox. GameObject should be tag as startBox and GameObjectExit should be tag as stopBox.
 
@@ -80,6 +83,12 @@ Seventh RecVel.cs
 Player2.cs, InputState.cs, RecPositions.cs and RecAcc.cs should be checked and the others should not be checked.
 
 It is important to restart your computer before attempting to play if you needed to install .NET Framework first. Otherwise, much of the Unity functions may not be implemented you will get errors.
+
+SETTING UP SOUNDS.
+
+In the Sounds folder place the pick up crystal and pick up artifact here.
+
+Drag the pick up crystal sound to the coin collect sound box in the player 1 - player 2 script GUI in the hierarchy and the artifact pick up sound into the goal box of the player 1 - player 2 script GUI.
 
 SETTING UP CONTROLLER INPUT IN UNITY
 
